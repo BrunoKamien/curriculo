@@ -1,0 +1,111 @@
+/* ================== IMPORTAÇÃO DE FONTES ================== */
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================== ESTILO GERAL ================== */
+body {
+    font-family: "Ancizar Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ================== CABEÇALHO E RODAPÉ ================== */
+header, footer {
+    font-family: "Raleway", sans-serif;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+}
+
+/* ================== CONTEÚDO PRINCIPAL ================== */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", sans-serif;
+}
+
+/* ================== SEÇÕES ================== */
+section {
+    margin-bottom: 30px;
+}
+
+/* ================== FORMAÇÃO, EXPERIÊNCIA, HABILIDADES ================== */
+.formacao, .experiencia, .habilidades {
+    padding: 15px;
+    border-left: 5px solid #003366;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+.formacao {
+    text-align: center;
+}
+
+/* ================== TÍTULOS ================== */
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: #004080;
+    margin-top: 15px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+/* ================== LISTAS ================== */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* ================== FORMULÁRIO DE CONTATO ================== */
+.contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #003366;
+    margin: 20px 0;
+}
+
+.contato input, 
+.contato textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.contato button:hover {
+    background-color: #0055aa;
+}

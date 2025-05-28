@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Currículo de Bruno Kamien">
+    <meta name="keywords" content="currículo, HTML, estudante, desenvolvedor">
+    <title>Currículo de Bruno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script>
+        document.getElementById("form-contato").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Exibi mensagem de confirmação
+        document.getElementById("confirmacao").style.display = "block";
+
+        // Limpa os campos do formulário
+        this.reset();
+
+        // Oculta a mensagem após 5 segundos
+        setTimeout(() => {
+            document.getElementById("confirmacao").style.display = "none";
+        }, 5000);
+        });
+</script>
+
+<body>
+
+                        <!--  CABEÇALHO  -->
+    <header>
+        <h1 id="titulo">Bruno Kamien</h1>
+        <p>Email: bruno-kamien@hotmail.com</p>
+        <p>Celular: (55) 9 9905-0436</p>
+        <p>Endereço: Rua Monte Castelo, 410 - Independência - RS</p>
+    </header>
+
+                    <!--  CONTEÚDO PRINCIPAL  -->
+    <main>
+
+        <!--  SEÇÃO DE FORMAÇÃO ACADÊMICA  -->
+        <section class="formacao">
+            <h2>FORMAÇÃO</h2>
+            <article>
+                <!-- Graduação -->
+                <h3>Unopar</h3>
+                <p><strong>Curso:</strong> Administração</p>
+                <p><strong>Período:</strong> 2019 - 2023</p>
+
+                <!-- Técnico -->
+                <h3>Cruzeiro do Sul</h3>
+                <p><strong>Curso:</strong> Técnico de Informática</p>
+                <p><strong>Período:</strong> 2024 - cursando</p>
+            </article>
+        </section>
+
+        <!-- SEÇÃO DE EXPERIÊNCIA PROFISSIONAL -->
+        <section class="experiencia">
+            <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+            <article>
+                <!-- Primeira experiência -->
+                <h3><strong>Corteva</strong></h3>
+                <p><strong>Cargo:</strong> Operador de Mesa de Gravidade</p>
+                <p><strong>Período:</strong> Fev 2021 - Abr 2021</p>
+                <p><strong>Responsabilidades:</strong></p>
+                <ul>
+                    <li>Operar a mesa de gravidade para classificação de grãos (milho) com base em densidade e qualidade.</li>
+                    <li>Regular a máquina conforme padrões técnicos para separar grãos quebrados, leves ou contaminados.</li>
+                    <li>Monitorar o fluxo de entrada e saída dos grãos, ajustando a inclinação, vibração e fluxo de ar da mesa conforme necessário.</li>
+                    </ul>
+
+                <!-- Segunda experiência -->
+                <h3>Mann Peças Agrícolas</h3>
+                <p><strong>Cargo:</strong> Operador de Torno CNC</p>
+                <p><strong>Período:</strong> 2021 - Atualmente</p>
+                <p><strong>Responsabilidades:</strong></p>
+                <ul>
+                    <li>Operação e programação de tornos CNC</li>
+                    <li>Controle de qualidade das peças produzidas</li>
+                    <li>Leitura e interpretação de desenhos técnicos</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- SEÇÃO DE HABILIDADES -->
+        <section class="habilidades">
+            <h2>HABILIDADES</h2>
+            <ul>
+                <li>Operação de máquinas CNC</li>
+                <li>Organização e disciplina no ambiente de trabalho</li>
+                <li>Capacidade de trabalho em equipe</li>
+                <li>Conhecimento básico em administração</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="confirmacao" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+        </section>
+
+                     <!--  RODAPÉ  -->
+    <footer>
+        <p>Última atualização: Maio de 2025</p>
+    </footer>
+
+</body>
+</html>
